@@ -1,0 +1,372 @@
+body {
+    background: linear-gradient(90deg, rgb(116, 50, 116), pink, rgb(117, 40, 173));
+    font-family: monospace;
+    margin-left: 100px;
+}
+
+.intro {
+    display: flex;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+ img {
+     width: 700px;
+     height: auto;
+     margin-top: -50px;
+     margin-right: 0px;
+     animation: zoomIn 1.5s ease-in-out forwards;
+ }
+ 
+ nav {
+    background: linear-gradient(90deg, rgb(116, 50, 116), pink, rgb(117, 40, 173));
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    top: 0;
+    margin-left: -100px;
+ }
+
+ .all{
+    margin-top: 200px;
+ }
+ .text {
+     margin-right: 70px;
+     text-shadow:
+     0 0 7px #f79eff,
+     0 0 10px #d26de0,
+     0 0 21px #d163d1,
+     0 0 42px rgb(176, 58, 182),
+     0 0 82px rgb(167, 46, 177),
+     0 0 92px rgb(166, 38, 166),
+     0 0 102px rgb(154, 34, 142),
+     0 0 151px rgb(170, 8, 172);
+     color: white;
+ }
+ 
+ ul {
+     display: flex;
+     flex-direction: row;
+     gap: 70px;
+     text-decoration: none;
+     list-style: none;
+     padding: 20px;
+     margin-top: 30px;
+     margin-left: 800px;
+     animation: slideIn 1.5s ease-in-out forwards;
+ }
+ 
+ button {
+    margin-top: -30px;
+     width: 100px;
+     height: 30px;
+     font-size: 15px;
+     margin-left: -20px;
+     border: none;
+     background-color: pink;
+     border-radius: 10px;
+     box-shadow: rgb(255, 255, 255) 0px 5px 15px;
+     color: rgb(116, 50, 116);
+     transition: 0.3s ease-in-out;
+     animation: bounceIn 1.5s ease-in-out forwards;
+ }
+ 
+ button:hover {
+     background-color: rgb(255, 182, 193);
+ }
+ 
+ .text > h1 {
+     margin-top: -10px;
+     font-size: 50px;
+     animation: slideDown 1.5s ease-in-out forwards;
+ }
+ 
+ .text > h2 {
+     font-size: 20px;
+     opacity: 0;
+     animation: fadeInUp 1.5s ease-in-out forwards;
+ }
+ 
+ .text > h2:nth-child(2) { animation-delay: 0.5s; }
+ .text > h2:nth-child(3) { animation-delay: 1s; }
+ .text > h2:nth-child(4) { animation-delay: 1.5s; }
+ .text > h2:nth-child(5) { animation-delay: 2s; }
+ .text > h2:nth-child(6) { animation-delay: 2.5s; }
+ 
+ .text > p {
+     font-size: 15px;
+     font-weight: 500;
+     margin-top: 50px;
+     line-height: 1.8;
+     opacity: 0;
+     animation: slideLeft 1.5s ease-in-out forwards;
+ }
+ 
+ 
+ @keyframes zoomIn {
+     from { transform: scale(0.8); opacity: 0; }
+     to { transform: scale(1); opacity: 1; }
+ }
+ 
+ @keyframes slideIn {
+     from { transform: translateX(50px); opacity: 0; }
+     to { transform: translateX(0); opacity: 1; }
+ }
+ 
+ @keyframes bounceIn {
+     0% { transform: scale(0.8); opacity: 0; }
+     50% { transform: scale(1.1); opacity: 1; }
+     100% { transform: scale(1); }
+ }
+ 
+ @keyframes slideDown {
+     from { transform: translateY(-30px); opacity: 0; }
+     to { transform: translateY(0); opacity: 1; }
+ }
+ 
+ @keyframes fadeInUp {
+     from { opacity: 0; transform: translateY(20px); }
+     to { opacity: 1; transform: translateY(0); }
+ }
+ 
+ @keyframes slideLeft {
+     from { transform: translateX(-50px); opacity: 0; }
+     to { transform: translateX(0); opacity: 1; }
+ }
+ 
+ hr {
+    margin-right: 100px;
+ }
+
+ a {
+    text-decoration: none;
+ }
+
+.developer, .writer, .volunteer, .researcher, .artist {
+    background: linear-gradient(90deg, rgb(163, 60, 163), rgb(136, 50, 162), rgb(127, 56, 177));
+    width: 900px;
+    height: 150px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: rgb(249, 248, 248) 0px 5px 15px;
+    text-shadow:
+     0 0 7px #f79eff,
+     0 0 10px #d26de0,
+     0 0 21px #d163d1,
+     0 0 42px rgb(176, 58, 182),
+     0 0 82px rgb(167, 46, 177),
+     0 0 92px rgb(166, 38, 166),
+     0 0 102px rgb(154, 34, 142),
+     0 0 151px rgb(170, 8, 172);
+     color: white;
+}
+
+.developer > img {
+    width: 150px;
+    height: auto;
+    float: left;
+    display: inline-block;
+    position: relative;
+    top: 30%;
+    margin-right: 30px;
+    border-radius: 8px;
+}
+
+.writer > img {
+    width: 150px;
+    height: auto;
+    float: left;
+    display: inline-block;
+    position: relative;
+    top: 30%;
+    margin-right: 30px;
+    border-radius: 8px;
+}
+
+.volunteer > img {
+    width: 150px;
+    height: auto;
+    float: left;
+    display: inline-block;
+    position: relative;
+    top: 30%;
+    margin-right: 30px;
+    border-radius: 8px;
+}
+
+.researcher > img {
+    width: 150px;
+    height: 150px;
+    float: left;
+    display: block;
+    position: relative;
+    top: 30%;
+    margin-right: 30px;
+    border-radius: 8px;
+}
+
+.researcher {
+    padding-bottom: 30px;
+}
+
+.artist > img {
+    width: 150px;
+    height: auto;
+    float: left;
+    display: inline-block;
+    position: relative;
+    top: 30%;
+    margin-right: 30px;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.text-container > p {
+    line-height: 1.7;
+}
+
+.artist {
+    margin-bottom: 100px;
+}
+
+.contact {
+    background: linear-gradient(90deg, rgb(116, 50, 116), pink, rgb(117, 40, 173));
+    padding: 50px;
+    text-align: center;
+    color: white;
+    margin-left: -100px;
+    text-shadow:
+    0 0 7px #f79eff,
+    0 0 10px #d26de0,
+    0 0 21px #d163d1,
+    0 0 42px rgb(176, 58, 182),
+    0 0 82px rgb(167, 46, 177),
+    0 0 92px rgb(166, 38, 166),
+    0 0 102px rgb(154, 34, 142),
+    0 0 151px rgb(170, 8, 172);
+    color: white;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #fff;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: pink;
+    color: rgb(116, 50, 116);
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 2px;
+}
+
+.contact-form button:hover {
+    background-color: rgb(255, 182, 193);
+}
+
+.contact h1 {
+    font-size: 35px;
+}
+
+footer {
+    background: rgb(116, 50, 116);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+    margin-left: -100px;
+    margin-bottom: 0;
+}
+
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(255, 182, 193);
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.8);
+}
+
+nav ul li button a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px white, 0 0 10px pink;
+}
+
+.contact-form button:hover {
+    background-color: rgb(255, 140, 180);
+    transform: translateY(-3px);
+}
+
+
+@keyframes glow {
+    0% { text-shadow: 0 0 10px pink; }
+    50% { text-shadow: 0 0 20px white; }
+    100% { text-shadow: 0 0 10px pink; }
+}
+
+.contact h1 {
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.contact-container, .contact-form, .contact-info {
+    animation: fadeUp 1.5s ease-in-out;
+}
+
+footer:hover {
+    background-color: rgb(136, 40, 136);
+}
